@@ -13,13 +13,19 @@ export default function Cart2() {
       { id: 8, name: 'carrot', icon: '🥕', price: 15.3, category: 'food', inStock: 12 },
    ]
 
-   const categories = ['animals', 'food']
+   const currentCategory = 'animals'
+   const maxPrice = 0
 
+   const filterdByCategory = currentCategory ? items.filter(item => item.category === currentCategory) : items
+   const filterdByPrice = maxPrice ? filterdByCategory.filter(item => item.price < maxPrice) : filterdByCategory
+
+   const categories = ['animals', 'food']
 
    return (
       <div className='body'>
+
          <ul className='list-items'>
-            {items.map(({ id, category, icon, inStock, name, price }) =>
+            {filterdByPrice.map(({ id, category, icon, inStock, name, price }) =>
                <ListItem
                   key={id}
                   id={id}
