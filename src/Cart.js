@@ -17,7 +17,7 @@ export default function Cart() {
    const [category, setCategory] = useState('')
 
    return (
-      <div>
+      <div className='body'>
          <ul className='categories'>
             {categories.map(c => <li onClick={() => setCategory(c)} key={c}>{c}</li>)}
             <li onClick={() => setCategory()}>all</li>

@@ -1,0 +1,12 @@
+.animal-list {
+   font-size: 32px;
+}
+
+.ppl-list {
+   font-size: 32px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   padding: 20px;
+   margin-left: 100px;
+}

@@ -6,13 +6,14 @@
   box-sizing: border-box;
 }
 
-body {
+.body {
   background-image: url('https://cdn.pixabay.com/photo/2022/10/21/08/39/cat-7536508_960_720.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
   background-color: #262626;
   font-family: 'Poppins', sans-serif;
+  margin: 0;
 
 }
 
@@ -24,7 +25,7 @@ body {
   gap: 20px;
   list-style: none;
   justify-content: center;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .categories li {
