@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 .body {
@@ -98,4 +99,55 @@
 
 .item-card .stock {
   text-transform: capitalize;
+}
+
+
+/* countries */
+
+.countryContainer {
+  padding: 40px;
+}
+
+.countries-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.countryCard {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0 0 0 1rem;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  background: #fff;
+  box-shadow: 3px 3px 15px rgba(158, 158, 158, 0.4);
+}
+
+.countryCard:hover {
+  box-shadow: 3px 3px 15px rgb(158, 158, 158);
+}
+
+.countryCard img {
+  width: 80px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.countryCard .name {
+  color: #000;
+}
+
+.countryCard p {
+  overflow: hidden;
 }
