@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect } from 'react'
 import ListItem from './ListItem'
 
-export default function Cart2() {
+export default function Cart() {
    const items = [
       { id: 1, name: 'bread', icon: '🍞', price: 3.5, category: 'food', inStock: 7 },
       { id: 2, name: 'orange', icon: '🍊', price: 4, category: 'food', inStock: 6 },
