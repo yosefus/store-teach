@@ -12,9 +12,9 @@ function App() {
   return (
     <div className="App">
       {/* <Cart /> */}
-      <CartAnimals />
-      <Context />
-      {/* <User /> */}
+      {/* <CartAnimals /> */}
+      {/* <Context /> */}
+      <User />
       {/* <Countries /> */}
       {/* <Testing /> */}
       {/* <Persons /> */}
