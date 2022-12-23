@@ -20,6 +20,7 @@ export default function User() {
             <div className="user-head">
                👤 {userName}
             </div>
+
          </header>
 
          {/* TODO - exctract to new component = Main */}
