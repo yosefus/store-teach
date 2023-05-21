@@ -14,7 +14,7 @@
    margin: auto;
    display: flex;
    flex-wrap: wrap;
-   gap: 20px;
+   gap: 12px;
    list-style: none;
    justify-content: center;
    padding-top: 20px;
@@ -22,14 +22,20 @@
 
 .categories li {
    background-color: #fff;
-   border-radius: 10px;
+   border-radius: 40px;
    padding: 10px 20px;
    cursor: pointer;
-   transition: all ease-in-out .2s;
+   transition: all ease-in-out .1s;
+   display: flex;
+   align-items: center;
+}
+
+.categories li.active {
+   background-color: #ffffffa9;
 }
 
 .categories li:hover {
-   transform: scale(1.1);
+   transform: scale(0.9);
 }
 
 .list-items {
@@ -42,6 +48,15 @@
    max-width: 1180px;
    margin: auto;
    list-style: none;
+}
+
+.list-items table td,
+.list-items table th {
+   padding: .5rem 1rem;
+   backdrop-filter: blur(10px);
+   background: rgba(0, 0, 0, 0.5);
+   color: #fff;
+   text-align: center;
 }
 
 .item-card {
@@ -58,13 +73,13 @@
    gap: 5px;
    font-size: 18px;
    transition: all ease-in-out .2s;
-   cursor: pointer;
+   /* cursor: pointer; */
    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .item-card:hover {
-   transform: scale(1.05);
+   transform: scale(1.02);
 }
 
 .item-card .name {
@@ -86,10 +101,18 @@
 
 .btns button {
    cursor: pointer;
-   padding: 5px 10px;
+   padding: 7px 15px;
    background-color: #4BB543;
    border: none;
+   border-radius: 40px;
+   font-weight: bold;
+   text-transform: capitalize;
+   margin-top: 10px;
+   transition: all ease-in-out .2s;
+}
 
+.btns button:hover {
+   transform: scaleX(.8);
 }
 
 .btns button:disabled {
@@ -171,6 +194,13 @@
    cursor: pointer;
    font-size: 20px;
    transition: all ease-in-out .2s;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.cart .cart-list li .delete svg {
+   color: #ff5656;
 }
 
 .cart .cart-list li .delete:hover {

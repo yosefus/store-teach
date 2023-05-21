@@ -6,11 +6,11 @@ export default function Cart() {
    const { itemsCart } = useContext(CartContext)
 
    function calcCart(arrItems = []) {
-      let sum = 0
-      arrItems.forEach(item => sum += (item.price * item.amount))
-      return sum
+      // let sum = 0
+      // arrItems.forEach(item => sum += (item.price * item.amount))
+      // return sum
 
-      // return arrItems.reduce((prev, curr) => prev += (curr.price * curr.amount), {})
+      return arrItems.reduce((acc, curr) => acc += (curr.price * curr.amount), 0)
    }
 
    const sumCart = calcCart(itemsCart)

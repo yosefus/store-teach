@@ -13,16 +13,17 @@ const items = [
    { id: 7, name: 'lion', icon: '🦁', price: 1, category: 'animals', inStock: 3 },
    { id: 8, name: 'carrot', icon: '🥕', price: 15.3, category: 'food', inStock: 12 },
 ]
-const categories = ['animals', 'food']
+const categories = ['animals', 'food', 'all']
 
 export const StoreContext = createContext()
 export const CartContext = createContext()
 
 
 export default function CartApp() {
-   const [category, setCategory] = useState('')
+   const [category, setCategory] = useState('all')
    const [itemsStore, setItemsStore] = useState(items)
    const [itemsCart, setItemsCart] = useState([])
+   const [isGrid, setIsGrid] = useState(false)
 
    return (
       <StoreContext.Provider value={{ itemsStore, setItemsStore }}>
@@ -30,7 +31,7 @@ export default function CartApp() {
             <div className='body'>
                <div className="container">
                   <Cart itemsCart={itemsCart} />
-                  <Store categories={categories} setCategory={setCategory} category={category} />
+                  <Store categories={categories} setCategory={setCategory} category={category} isGrid={isGrid} setIsGrid={setIsGrid} />
                </div>
             </div>
          </CartContext.Provider>

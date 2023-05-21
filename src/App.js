@@ -1,9 +1,12 @@
 import './App.css';
-// import Cart from './Cart';
+// import Cart from './cart';
 import CartAnimals from './CartAnimals';
-import Context from './Context/Context';
+// import Chess from './Chess';
+// import Grid from './Grid';
+// import Context from './Context/Context';
+// import Router from './Router';
 
-import User from './User/User';
+// import User from './User/User';
 // import Countries from './Countries';
 // import Persons from './Persons';
 // import Testing from './Test';
@@ -11,10 +14,13 @@ import User from './User/User';
 function App() {
   return (
     <div className="App">
+      {/* <Router /> */}
       {/* <Cart /> */}
-      {/* <CartAnimals /> */}
+      <CartAnimals />
+      {/* <Chess /> */}
+      {/* <Grid /> */}
       {/* <Context /> */}
-      <User />
+      {/* <User /> */}
       {/* <Countries /> */}
       {/* <Testing /> */}
       {/* <Persons /> */}

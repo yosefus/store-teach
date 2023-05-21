@@ -5,9 +5,11 @@ export default function Countries() {
    const [countryList, setCountryList] = useState([])
 
    async function getCountries() {
-      const res = await fetch('https://restcountries.com/v2/all');
-      const data = await res.json();
-      setCountryList(data)
+      try {
+         const res = await fetch('https://restcountries.com/v3.1/all');
+         const data = await res.json();
+         setCountryList(data)
+      } catch (error) { console.log(error) }
    }
 
    useEffect(() => {

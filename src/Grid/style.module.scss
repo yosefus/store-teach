@@ -1,0 +1,25 @@
+.board {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-auto-rows: minmax(100px, auto);
+}
+
+
+
+.board>div:nth-child(1) {
+   // 1
+   grid-column-start: 1;
+   grid-column-end: 3; //both the same
+   grid-column-end: -1; //both the same
+   // 2
+   grid-column: span 2;
+   // 3
+   grid-column: 1 / -1;
+}
+
+
+.board>div {
+   background-color: rgb(255, 223, 181);
+   border: 4px solid rgb(255, 87, 81);
+   padding: 10px;
+}

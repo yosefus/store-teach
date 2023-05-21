@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { CartContext, StoreContext } from '.'
+import { AiOutlineDelete } from 'react-icons/ai'
 
 export default function ItemCart({ item }) {
    const { id, name, icon, price, amount } = item
@@ -21,7 +22,7 @@ export default function ItemCart({ item }) {
          <div className="name">{name}</div>
          <div className="num">-{amount}-</div>
          <div className="price">{price}$</div>
-         <button onClick={() => deleteFromCart(id)} className="delete">💀</button>
+         <button onClick={() => deleteFromCart(id)} className="delete"><AiOutlineDelete /></button>
       </li>
    )
 }

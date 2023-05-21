@@ -7,6 +7,9 @@
   font-family: 'Poppins', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
 
 /* countries */
 
@@ -56,4 +59,46 @@
 
 .countryCard p {
   overflow: hidden;
+}
+
+/* router */
+
+.navbar {
+  display: flex;
+  gap: 20px;
+  background-color: #262626;
+  height: 60px;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.navbar .active {
+  transform: scale(1.2);
+}
+
+.navbar .pending {
+  color: blueviolet;
+}
+
+.country-display {
+  width: fit-content;
+  margin: 10px auto;
+
+}
+
+.country-display .name {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.country-display img {
+  width: 600px;
+  max-width: 100%;
+  margin-top: 30px;
 }
