@@ -154,16 +154,20 @@
    width: 400px;
    padding: 20px 5px;
 
+
 }
 
 .cart h2 {
    color: #fff;
+   margin-left: 1rem;
+   margin-bottom: 1rem;
 }
 
 .cart .cart-list {
    display: flex;
    flex-direction: column;
    gap: 10px;
+   align-items: center;
 }
 
 .cart .cart-list li {
