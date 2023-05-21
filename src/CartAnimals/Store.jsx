@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { StoreContext } from '.'
 import ItemStore from './ItemStore'
 import { BsFillGrid3X3GapFill } from 'react-icons/bs'
+import { ImTable2 } from 'react-icons/im'
 
 export default function Store({ categories, setCategory, category, isGrid, setIsGrid }) {
    const { itemsStore } = useContext(StoreContext)
@@ -12,7 +13,7 @@ export default function Store({ categories, setCategory, category, isGrid, setIs
       <div className="store">
          <ul className='categories'>
             {categories.map(c => <li className={category === c ? 'active' : ''} onClick={() => setCategory(c)} key={c}>{c}</li>)}
-            <li onClick={() => setIsGrid(old => !old)}><BsFillGrid3X3GapFill /></li>
+            <li onClick={() => setIsGrid(old => !old)}>{!isGrid ? <BsFillGrid3X3GapFill /> : <ImTable2 />}</li>
          </ul>
          {isGrid ?
             <ul className='list-items'>
